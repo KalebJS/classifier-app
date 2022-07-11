@@ -67,21 +67,22 @@
     <div class="container py-3">
         <main>
             <form method="post" action="/">
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col text-center">
-                        <input type="hidden" name="img_path" value="{{ img_path }}">
-                        <img src="{{ img_path }}" class="img-fluid" alt="Responsive image">
+                        <input type="hidden" name="img_path" value="{{ filename }}">
+                        <img src="{{ relpath }}" class="img-fluid" alt="Responsive image" style="max-height: 500px;">
+                        <p>{{ filename }}</p>
                     </div>
                 </div>
                 <div class="row mb-3 text-center">
                     <div class="col">
                         <button type="submit" value="1" name="response" class="btn btn-lg btn-primary w-100">
-                            Accept
+                            accept
                         </button>
                     </div>
                     <div class="col">
                         <button type="submit" value="0" name="response" class="btn btn-lg btn-warning w-100">
-                            Accept
+                            reject
                         </button>
                     </div>
                 </div>
