@@ -76,12 +76,14 @@
                 </div>
                 <div class="row mb-3 text-center">
                     <div class="col">
-                        <button type="submit" value="1" name="response" class="btn btn-lg btn-primary w-100">
+                        <button type="submit" value="1" id="accept" name="response"
+                                class="btn btn-lg btn-primary w-100">
                             accept
                         </button>
                     </div>
                     <div class="col">
-                        <button type="submit" value="0" name="response" class="btn btn-lg btn-warning w-100">
+                        <button type="submit" value="0" id="reject" name="response"
+                                class="btn btn-lg btn-warning w-100">
                             reject
                         </button>
                     </div>
@@ -89,5 +91,11 @@
             </form>
         </main>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script>
+    <script src="{{ url_for("static", filename="js/bootstrap.bundle.min.js") }}"></script>
+    <script src="{{ url_for("static", filename="js/form-validation.js") }}"></script>
+    <script src="{{ url_for("static", filename="js/keypress.js") }}"></script>
 {% endblock %}
 
